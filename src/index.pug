@@ -1,0 +1,814 @@
+extends parts/layout
+
+block body
+  body.front
+    #main
+      .top1_wrapper
+        .container
+          .top1.clearfix
+            .email1
+              a(href='#') support@travelagency.com
+            .phone1 +917 3386831
+            .social_wrapper
+              ul.social.clearfix
+                li
+                  a(href='#')
+                    i.fa.fa-facebook
+                li
+                  a(href='#')
+                    i.fa.fa-twitter
+                li
+                  a(href='#')
+                    i.fa.fa-google-plus
+                li
+                  a(href='#')
+                    i.fa.fa-instagram
+                li
+                  a(href='#')
+                    i.fa.fa-vimeo-square
+            .lang1
+              .dropdown
+                button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                  | English
+                  span.caret
+                ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+                  li
+                    a.ge(href='#') German
+                  li
+                    a.ru(href='#') Russian
+      .top2_wrapper
+        .container
+          .top2.clearfix
+            header
+              .logo_wrapper
+                a.logo(href='index.html')
+                  img.img-responsive(src='images/logo.png', alt='')
+            .navbar.navbar_.navbar-default
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              .navbar-collapse.navbar-collapse_.collapse
+                ul.nav.navbar-nav.sf-menu.clearfix
+                  li.sub-menu.sub-menu-1.active
+                    a(href='#')
+                      | Home
+                      em
+                    ul
+                      li
+                        a(href='index.html') Home Version 1
+                      li
+                        a(href='index-2.html') Home Version 2 (slideshow)
+                      li
+                        a(href='index-1.html') Home Version 3 (video)
+                  li
+                    a(href='about.html') About Us
+                  li
+                    a(href='gallery.html') Gallery
+                  li.sub-menu.sub-menu-1
+                    a(href='#')
+                      | Pages
+                      em
+                    ul
+                      li
+                        a(href='flights.html') Flights
+                        ul
+                          li
+                            a(href='search-flights.html') Search Flights
+                          li
+                            a(href='booking-flights.html') Booking Flights
+                          li
+                            a(href='booking-flights-page.html') Flights Checkout
+                      li
+                        a(href='hotels.html') Hotels
+                        ul
+                          li
+                            a(href='search-hotel.html') Search Hotels
+                          li
+                            a(href='booking-hotel.html') Booking Hotel
+                          li
+                            a(href='booking-hotel-page.html') Hotel Reservation
+                      li
+                        a(href='cars.html') Rent a Car
+                        ul
+                          li
+                            a(href='search-cars.html') Search Cars
+                          li
+                            a(href='booking-cars.html') Booking Car
+                          li
+                            a(href='booking-cars-page.html') Car Reservation
+                      li
+                        a(href='cruises.html') Cruises
+                        ul
+                          li
+                            a(href='search-cruise.html') Search Cruise
+                          li
+                            a(href='booking-cruise.html') Booking Cruise
+                          li
+                            a(href='booking-cruise-page.html') Cruise Checkout
+                  li.sub-menu.sub-menu-1
+                    a(href='#')
+                      | Blog
+                      em
+                    ul
+                      li
+                        a(href='blog.html') Right Blog
+                      li
+                        a(href='left-blog.html') Left Blog
+                      li
+                        a(href='post.html') Right Post
+                      li
+                        a(href='left-post.html') Left Post
+                      li
+                        a(href='full-post.html') Full Post
+                  li
+                    a(href='contacts.html') Contacts
+      #slider_wrapper
+        .container
+          #slider_inner
+            div
+              #slider
+                div
+                  .carousel-box
+                    .inner
+                      .carousel.main
+                        ul
+                          li
+                            .slider
+                              .slider_inner
+                                .txt1
+                                  span Welcome To Our
+                                .txt2
+                                  span TRAVEL AGENCY
+                                .txt3
+                                  span
+                                    | Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod.
+                          li
+                            .slider
+                              .slider_inner
+                                .txt1
+                                  span 7 - Day Tour
+                                .txt2
+                                  span AMAZING CARIBBEAN
+                                .txt3
+                                  span Lorem ipsum dolor eleifend option congue nihil imperdiet doming id quod.
+                          li
+                            .slider
+                              .slider_inner
+                                .txt1
+                                  span 5 Days In
+                                .txt2
+                                  span PARIS (Capital Of World)
+                                .txt3
+                                  span
+                                    | Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod.
+                          li
+                            .slider
+                              .slider_inner
+                                .txt1
+                                  span 12 - Day Cruises
+                                .txt2
+                                  span FROM GREECE TO SPAIN
+                                .txt3
+                                  span MEDITERRANEAN - 12 - Day Cruises By "GRAND VICTORIA III" Cruise Liner.
+                .slider_pagination
+      #front_tabs
+        .container
+          .tabs_wrapper.tabs1_wrapper
+            .tabs.tabs1
+              .tabs_tabs.tabs1_tabs
+                ul
+                  li.active.flights
+                    a(href='#tabs-1') Flights
+                  li.hotels
+                    a(href='#tabs-2') Hotels
+                  li.cars
+                    a(href='#tabs-3') Cars
+                  li.cruises
+                    a(href='#tabs-4') Cruises
+              .tabs_content.tabs1_content
+                #tabs-1
+                  form.form1(action='javascript:;')
+                    .row
+                      .col-sm-4.col-md-2
+                        .select1_wrapper
+                          label Flying from:
+                          .select1_inner
+                            select.select2.select(style='width: 100%')
+                              option(value='1') City or Airport
+                              option(value='2') Alaska
+                              option(value='3') Bahamas
+                              option(value='4') Bermuda
+                              option(value='5') Canada
+                              option(value='6') Caribbean
+                              option(value='7') Europe
+                              option(value='8') Hawaii
+                      .col-sm-4.col-md-2
+                        .select1_wrapper
+                          label To:
+                          .select1_inner
+                            select.select2.select(style='width: 100%')
+                              option(value='1') City or Airport
+                              option(value='2') Alaska
+                              option(value='3') Bahamas
+                              option(value='4') Bermuda
+                              option(value='5') Canada
+                              option(value='6') Caribbean
+                              option(value='7') Europe
+                              option(value='8') Hawaii
+                      .col-sm-4.col-md-2
+                        .input1_wrapper
+                          label Departing:
+                          .input1_inner
+                            input.input.datepicker(type='text', value='Mm/Dd/Yy')
+                      .col-sm-4.col-md-2
+                        .input1_wrapper
+                          label Returning:
+                          .input1_inner
+                            input.input.datepicker(type='text', value='Mm/Dd/Yy')
+                      .col-sm-4.col-md-1
+                        .select1_wrapper
+                          label Adult:
+                          .select1_inner
+                            select.select2.select.select3(style='width: 100%')
+                              option(value='1') 1
+                              option(value='2') 2
+                              option(value='3') 3
+                              option(value='4') 4
+                              option(value='5') 5
+                              option(value='6') 6
+                              option(value='7') 7
+                              option(value='8') 8
+                      .col-sm-4.col-md-1
+                        .select1_wrapper
+                          label Child:
+                          .select1_inner
+                            select.select2.select.select3(style='width: 100%')
+                              option(value='1') 1
+                              option(value='2') 2
+                              option(value='3') 3
+                              option(value='4') 4
+                              option(value='5') 5
+                              option(value='6') 6
+                              option(value='7') 7
+                              option(value='8') 8
+                      .col-sm-4.col-md-2
+                        .button1_wrapper
+                          button.btn-default.btn-form1-submit(type='submit') Search
+                #tabs-2
+                  form.form1(action='javascript:;')
+                    .row
+                      .col-sm-4.col-md-4
+                        .select1_wrapper
+                          label City or Hotel Name:
+                          .select1_inner
+                            select.select2.select(style='width: 100%')
+                              option(value='1') Enter a destination or hotel name
+                              option(value='2') Lorem ipsum dolor sit amet
+                              option(value='3') Duis autem vel eum
+                              option(value='4') Ut wisi enim ad minim veniam
+                              option(value='5') Nam liber tempor cum
+                              option(value='6') At vero eos et accusam et
+                              option(value='7') Consetetur sadipscing elitr
+                              option(value='8') Sed diam nonumy
+                      .col-sm-4.col-md-2
+                        .input1_wrapper
+                          label Check-In:
+                          .input1_inner
+                            input.input.datepicker(type='text', value='Mm/Dd/Yy')
+                      .col-sm-4.col-md-2
+                        .input1_wrapper
+                          label Check-Out:
+                          .input1_inner
+                            input.input.datepicker(type='text', value='Mm/Dd/Yy')
+                      .col-sm-4.col-md-2
+                        .select1_wrapper
+                          label Adult:
+                          .select1_inner
+                            select.select2.select(style='width: 100%')
+                              option(value='1') Room  for  1  adult
+                              option(value='2') Room  for  2  adult
+                              option(value='3') Room  for  3  adult
+                              option(value='4') Room  for  4  adult
+                              option(value='5') Room  for  5  adult
+                              option(value='6') Room  for  6  adult
+                              option(value='7') Room  for  7  adult
+                              option(value='8') Room  for  8  adult
+                      .col-sm-4.col-md-2
+                        .button1_wrapper
+                          button.btn-default.btn-form1-submit(type='submit') Search
+                #tabs-3
+                  form.form1(action='javascript:;')
+                    .row
+                      .col-sm-4.col-md-2
+                        .select1_wrapper
+                          label Country:
+                          .select1_inner
+                            select.select2.select(style='width: 100%')
+                              option(value='1') Please Select
+                              option(value='2') Alaska
+                              option(value='3') Bahamas
+                              option(value='4') Bermuda
+                              option(value='5') Canada
+                              option(value='6') Caribbean
+                              option(value='7') Europe
+                              option(value='8') Hawaii
+                      .col-sm-4.col-md-2
+                        .select1_wrapper
+                          label City:
+                          .select1_inner
+                            select.select2.select(style='width: 100%')
+                              option(value='1') Please Select
+                              option(value='2') Alaska
+                              option(value='3') Bahamas
+                              option(value='4') Bermuda
+                              option(value='5') Canada
+                              option(value='6') Caribbean
+                              option(value='7') Europe
+                              option(value='8') Hawaii
+                      .col-sm-4.col-md-2
+                        .select1_wrapper
+                          label Location:
+                          .select1_inner
+                            select.select2.select(style='width: 100%')
+                              option(value='1') Please Select
+                              option(value='2') Alaska
+                              option(value='3') Bahamas
+                              option(value='4') Bermuda
+                              option(value='5') Canada
+                              option(value='6') Caribbean
+                              option(value='7') Europe
+                              option(value='8') Hawaii
+                      .col-sm-4.col-md-2
+                        .input1_wrapper
+                          label Pick up Date:
+                          .input1_inner
+                            input.input.datepicker(type='text', value='Mm/Dd/Yy')
+                      .col-sm-4.col-md-2
+                        .input1_wrapper
+                          label Drop off Date:
+                          .input1_inner
+                            input.input.datepicker(type='text', value='Mm/Dd/Yy')
+                      .col-sm-4.col-md-2
+                        .button1_wrapper
+                          button.btn-default.btn-form1-submit(type='submit') Search
+                #tabs-4
+                  form.form1(action='javascript:;')
+                    .row
+                      .col-sm-4.col-md-2
+                        .select1_wrapper
+                          label Sail To:
+                          .select1_inner
+                            select.select2.select(style='width: 100%')
+                              option(value='1') All destinations
+                              option(value='2') Alaska
+                              option(value='3') Bahamas
+                              option(value='4') Bermuda
+                              option(value='5') Canada
+                              option(value='6') Caribbean
+                              option(value='7') Europe
+                              option(value='8') Hawaii
+                      .col-sm-4.col-md-2
+                        .select1_wrapper
+                          label Sail From:
+                          .select1_inner
+                            select.select2.select(style='width: 100%')
+                              option(value='1') All ports
+                              option(value='2') Alaska
+                              option(value='3') Bahamas
+                              option(value='4') Bermuda
+                              option(value='5') Canada
+                              option(value='6') Caribbean
+                              option(value='7') Europe
+                              option(value='8') Hawaii
+                      .col-sm-4.col-md-2
+                        .input1_wrapper
+                          label Start Date:
+                          .input1_inner
+                            input.input.datepicker(type='text', value='From any month')
+                      .col-sm-4.col-md-2
+                        .input1_wrapper
+                          label End of Date:
+                          .input1_inner
+                            input.input.datepicker(type='text', value='To any month')
+                      .col-sm-4.col-md-2
+                        .select1_wrapper
+                          label Cruise Ship:
+                          .select1_inner
+                            select.select2.select(style='width: 100%')
+                              option(value='1') All Ships
+                              option(value='2') Alaska
+                              option(value='3') Bahamas
+                              option(value='4') Bermuda
+                              option(value='5') Canada
+                              option(value='6') Caribbean
+                              option(value='7') Europe
+                              option(value='8') Hawaii
+                      .col-sm-4.col-md-2
+                        .button1_wrapper
+                          button.btn-default.btn-form1-submit(type='submit') Search
+      #why1
+        .container
+          h2.animated(data-animation='fadeInUp', data-animation-delay='100') WHY WE ARE THE BEST
+          .title1.animated(data-animation='fadeInUp', data-animation-delay='200')
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+            br
+            | tincidunt ut laoreet dolore magna aliquam erat volutpat.
+          br
+          br
+          .row
+            .col-sm-3
+              .thumb2.animated(data-animation='flipInY', data-animation-delay='200')
+                .thumbnail.clearfix
+                  a(href='#')
+                    figure
+                      img.img1.img-responsive(src='images/why1.png', alt='')
+                      img.img2.img-responsive(src='images/why1_hover.png', alt='')
+                    .caption
+                      .txt1 Amazing Travel
+                      .txt2
+                        | Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+                      .txt3 Read More
+            .col-sm-3
+              .thumb2.animated(data-animation='flipInY', data-animation-delay='300')
+                .thumbnail.clearfix
+                  a(href='#')
+                    figure
+                      img.img1.img-responsive(src='images/why2.png', alt='')
+                      img.img2.img-responsive(src='images/why2_hover.png', alt='')
+                    .caption
+                      .txt1 Discover
+                      .txt2
+                        | Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+                      .txt3 Read More
+            .col-sm-3
+              .thumb2.animated(data-animation='flipInY', data-animation-delay='400')
+                .thumbnail.clearfix
+                  a(href='#')
+                    figure
+                      img.img1.img-responsive(src='images/why3.png', alt='')
+                      img.img2.img-responsive(src='images/why3_hover.png', alt='')
+                    .caption
+                      .txt1 Book Your Trip
+                      .txt2
+                        | Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+                      .txt3 Read More
+            .col-sm-3
+              .thumb2.animated(data-animation='flipInY', data-animation-delay='500')
+                .thumbnail.clearfix
+                  a(href='#')
+                    figure
+                      img.img1.img-responsive(src='images/why4.png', alt='')
+                      img.img2.img-responsive(src='images/why4_hover.png', alt='')
+                    .caption
+                      .txt1 Nice Support
+                      .txt2
+                        | Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+                      .txt3 Read More
+      #parallax1.parallax
+        .bg1.parallax-bg
+        .overlay
+        .parallax-content
+          .container
+            .row
+              .col-sm-10.animated(data-animation='fadeInLeft', data-animation-delay='100')
+                .txt1 Caucasus Vacation Packages
+                .txt2
+                  | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.
+                .txt3
+                  | From: Khazbegi (Goergia) 
+                  strong $159.00
+                  span person
+              .col-sm-2.animated(data-animation='fadeInRight', data-animation-delay='200')
+                a.btn-default.btn0(href='#') Details
+      #popular_cruises1
+        .container
+          h2.animated(data-animation='fadeInUp', data-animation-delay='100') POPULAR CRUISES
+          .title1.animated(data-animation='fadeInUp', data-animation-delay='200')
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+            br
+            | tincidunt ut laoreet dolore magna aliquam erat volutpat.
+          br
+          br
+          #popular_wrapper.animated(data-animation='fadeIn', data-animation-delay='300')
+            #popular_inner
+              div
+                #popular
+                  div
+                    .carousel-box
+                      .inner
+                        .carousel.main
+                          ul
+                            li
+                              .popular
+                                .popular_inner
+                                  figure
+                                    img.img-responsive(src='images/popular01.jpg', alt='')
+                                    .over
+                                      .v1
+                                        | Bahamas 
+                                        span 17 Deal Offers
+                                      .v2 Lorem ipsum dolor sit amet, concateus.
+                                  .caption
+                                    .txt1
+                                      span Bahamas
+                                      |  7 Night Tour
+                                    .txt2 Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming.
+                                    .txt3.clearfix
+                                      .left_side
+                                        .stars1
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star2.png', alt='')
+                                        .nums - 18 Reviews
+                                      .right_side
+                                        a.btn-default.btn1(href='#') See All
+                            li
+                              .popular
+                                .popular_inner
+                                  figure
+                                    img.img-responsive(src='images/popular02.jpg', alt='')
+                                    .over
+                                      .v1
+                                        | Mediterranean 
+                                        span 17 Deal Offers
+                                      .v2 Lorem ipsum dolor sit amet, concateus.
+                                  .caption
+                                    .txt1
+                                      span Mediterranean
+                                      |  18 Night Tour
+                                    .txt2 Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming.
+                                    .txt3.clearfix
+                                      .left_side
+                                        .stars1
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                        .nums - 168 Reviews
+                                      .right_side
+                                        a.btn-default.btn1(href='#') See All
+                            li
+                              .popular
+                                .popular_inner
+                                  figure
+                                    img.img-responsive(src='images/popular03.jpg', alt='')
+                                    .over
+                                      .v1
+                                        | Greece 
+                                        span 17 Deal Offers
+                                      .v2 Lorem ipsum dolor sit amet, concateus.
+                                  .caption
+                                    .txt1
+                                      span Greece
+                                      |  6 Night Tour
+                                    .txt2 Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming.
+                                    .txt3.clearfix
+                                      .left_side
+                                        .stars1
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star2.png', alt='')
+                                        .nums - 16 Reviews
+                                      .right_side
+                                        a.btn-default.btn1(href='#') See All
+                            li
+                              .popular
+                                .popular_inner
+                                  figure
+                                    img.img-responsive(src='images/popular01.jpg', alt='')
+                                    .over
+                                      .v1
+                                        | Bahamas 
+                                        span 17 Deal Offers
+                                      .v2 Lorem ipsum dolor sit amet, concateus.
+                                  .caption
+                                    .txt1
+                                      span Bahamas
+                                      |  7 Night Tour
+                                    .txt2 Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming.
+                                    .txt3.clearfix
+                                      .left_side
+                                        .stars1
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star2.png', alt='')
+                                        .nums - 18 Reviews
+                                      .right_side
+                                        a.btn-default.btn1(href='#') See All
+                            li
+                              .popular
+                                .popular_inner
+                                  figure
+                                    img.img-responsive(src='images/popular02.jpg', alt='')
+                                    .over
+                                      .v1
+                                        | Mediterranean 
+                                        span 17 Deal Offers
+                                      .v2 Lorem ipsum dolor sit amet, concateus.
+                                  .caption
+                                    .txt1
+                                      span Mediterranean
+                                      |  18 Night Tour
+                                    .txt2 Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming.
+                                    .txt3.clearfix
+                                      .left_side
+                                        .stars1
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                        .nums - 168 Reviews
+                                      .right_side
+                                        a.btn-default.btn1(href='#') See All
+                            li
+                              .popular
+                                .popular_inner
+                                  figure
+                                    img.img-responsive(src='images/popular03.jpg', alt='')
+                                    .over
+                                      .v1
+                                        | Greece 
+                                        span 17 Deal Offers
+                                      .v2 Lorem ipsum dolor sit amet, concateus.
+                                  .caption
+                                    .txt1
+                                      span Greece
+                                      |  6 Night Tour
+                                    .txt2 Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming.
+                                    .txt3.clearfix
+                                      .left_side
+                                        .stars1
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star1.png', alt='')
+                                          img(src='images/star2.png', alt='')
+                                        .nums - 16 Reviews
+                                      .right_side
+                                        a.btn-default.btn1(href='#') See All
+                  .popular_pagination
+      #happy1
+        .container
+          .row
+            .col-sm-12.col-md-6.col-md-push-6
+              .content
+                .txt1.animated(data-animation='fadeIn', data-animation-delay='100') HAPPY CUSTOMERS
+                .txt2.animated(data-animation='fadeIn', data-animation-delay='150') Lorem ipsum dolor sit amet, consectetuer adipiscing elit, set amet. 
+                .txt3.animated(data-animation='fadeIn', data-animation-delay='200')
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh oui-
+                    | sod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit dolore magna aliquam erat voutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit..
+                  p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euisod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+                .distance1.animated(data-animation='fadeInUp', data-animation-delay='0')
+                  .txt Flights
+                  .bg
+                    .animated-distance(data-num='94', data-duration='1300', data-animation-delay='0')
+                      span
+                .distance1.animated(data-animation='fadeInUp', data-animation-delay='100')
+                  .txt Hotels
+                  .bg
+                    .animated-distance(data-num='87', data-duration='1300', data-animation-delay='100')
+                      span
+                .distance1.animated(data-animation='fadeInUp', data-animation-delay='200')
+                  .txt Cars
+                  .bg
+                    .animated-distance(data-num='48', data-duration='1300', data-animation-delay='200')
+                      span
+                .distance1.animated(data-animation='fadeInUp', data-animation-delay='300')
+                  .txt Cruises
+                  .bg
+                    .animated-distance(data-num='51', data-duration='1300', data-animation-delay='300')
+                      span
+            .col-sm-12.col-md-6.col-md-pull-6.animated(data-animation='fadeInLeft', data-animation-delay='200')
+              img.img1.img-responsive(src='images/people.png', alt='')
+      #partners
+        .container
+          .row
+            .col-sm-4.col-md-2.col-xs-6
+              .thumb1.animated(data-animation='flipInX', data-animation-delay='100')
+                .thumbnail.clearfix
+                  a(href='#')
+                    figure
+                      img.img1.img-responsive(src='images/partner1.jpg', alt='')
+                      img.img2.img-responsive(src='images/partner1_hover.jpg', alt='')
+            .col-sm-4.col-md-2.col-xs-6
+              .thumb1.animated(data-animation='flipInX', data-animation-delay='200')
+                .thumbnail.clearfix
+                  a(href='#')
+                    figure
+                      img.img1.img-responsive(src='images/partner2.jpg', alt='')
+                      img.img2.img-responsive(src='images/partner2_hover.jpg', alt='')
+            .col-sm-4.col-md-2.col-xs-6
+              .thumb1.animated(data-animation='flipInX', data-animation-delay='300')
+                .thumbnail.clearfix
+                  a(href='#')
+                    figure
+                      img.img1.img-responsive(src='images/partner3.jpg', alt='')
+                      img.img2.img-responsive(src='images/partner3_hover.jpg', alt='')
+            .col-sm-4.col-md-2.col-xs-6
+              .thumb1.animated(data-animation='flipInX', data-animation-delay='400')
+                .thumbnail.clearfix
+                  a(href='#')
+                    figure
+                      img.img1.img-responsive(src='images/partner4.jpg', alt='')
+                      img.img2.img-responsive(src='images/partner4_hover.jpg', alt='')
+            .col-sm-4.col-md-2.col-xs-6
+              .thumb1.animated(data-animation='flipInX', data-animation-delay='500')
+                .thumbnail.clearfix
+                  a(href='#')
+                    figure
+                      img.img1.img-responsive(src='images/partner5.jpg', alt='')
+                      img.img2.img-responsive(src='images/partner5_hover.jpg', alt='')
+            .col-sm-4.col-md-2.col-xs-6
+              .thumb1.animated(data-animation='flipInX', data-animation-delay='600')
+                .thumbnail.clearfix
+                  a(href='#')
+                    figure
+                      img.img1.img-responsive(src='images/partner6.jpg', alt='')
+                      img.img2.img-responsive(src='images/partner6_hover.jpg', alt='')
+      .bot1_wrapper
+        .container
+          .row
+            .col-sm-3
+              .logo2_wrapper
+                a.logo2(href='index.html')
+                  img.img-responsive(src='images/logo2.png', alt='')
+              p
+                | Nam liber tempor cum soluta nobis option congue nihil imperdiet doming id quod mazim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+              p
+                a.btn-default.btn2(href='#') Read More
+            .col-sm-3
+              .bot1_title Travel Specialists
+              ul.ul1
+                li
+                  a(href='#') First Class Flights
+                li
+                  a(href='#') Accessible Travel
+                li
+                  a(href='#') Amazing Cruises
+              .social2_wrapper
+                ul.social2.clearfix
+                  li.nav1
+                    a(href='#')
+                  li.nav2
+                    a(href='#')
+                  li.nav3
+                    a(href='#')
+                  li.nav4
+                    a(href='#')
+                  li.nav5
+                    a(href='#')
+                  li.nav6
+                    a(href='#')
+            .col-sm-3
+              .bot1_title Our Twitter
+              .twits1
+                .twit1
+                  a(href='#')  @travel
+                  |  Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                  .date 5 minutes ago
+                .twit1
+                  a(href='#') @leo
+                  |  Nam liber tempor cum soluta nobis option congue nihil imperdiet doming id quod mazim.
+                  .date 2 days ago
+            .col-sm-3
+              .bot1_title Newsletter
+              .newsletter_block
+                .txt1 Inspiration, ideas, news and your feedback.
+                .newsletter-wrapper.clearfix
+                  form.newsletter(action='javascript:;')
+                    input(type='text', name='s', value='Email Address', onblur="if(this.value=='') this.value='Email Address'", onfocus="if(this.value =='Email Address' ) this.value=''")
+                    a.btn-default.btn3(href='#') SUBMIT
+              .phone2 1-917-338-6831
+              .support1
+                a(href='#') support@templates-support.com
+      .bot2_wrapper
+        .container
+          .left_side
+            | Copyright © 2017 
+            a(href='#', target='_blank')
+              strong MECOVACHE
+            span |
+            a(href='#') Privacy Policy
+            span |
+            a(href='#') About Us
+            span |
+            a(href='#') FAQ
+            span |
+            a(href='#') Contact Support
+          .right_side
+            | Designed by 
+            a(href='#', target='_blank')
+              strong MECOVACHE
+    script(src='js/bootstrap.min.js')
