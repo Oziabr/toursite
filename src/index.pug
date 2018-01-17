@@ -1,42 +1,13 @@
 extends parts/layout
+include mixins/index
 
 block body
   body.front
     #main
       .top1_wrapper
-        .container
-          .top1.clearfix
-            .email1
-              a(href='#') support@travelagency.com
-            .phone1 +917 3386831
-            .social_wrapper
-              ul.social.clearfix
-                li
-                  a(href='#')
-                    i.fa.fa-facebook
-                li
-                  a(href='#')
-                    i.fa.fa-twitter
-                li
-                  a(href='#')
-                    i.fa.fa-google-plus
-                li
-                  a(href='#')
-                    i.fa.fa-instagram
-                li
-                  a(href='#')
-                    i.fa.fa-vimeo-square
-            .lang1
-              .dropdown
-                button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
-                  | English
-                  span.caret
-                ul.dropdown-menu(aria-labelledby='dropdownMenu1')
-                  li
-                    a.ge(href='#') German
-                  li
-                    a.ru(href='#') Russian
+        include parts/topest
       .top2_wrapper
+        include parts/head
         .container
           .top2.clearfix
             header

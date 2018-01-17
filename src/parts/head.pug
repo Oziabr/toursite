@@ -1,0 +1,44 @@
+.container
+  .top2.clearfix
+    header
+      .logo_wrapper
+        a.logo(href='index.html')
+          img.img-responsive(src='images/logo.png', alt='')
+    .navbar.navbar_.navbar-default
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      .navbar-collapse.navbar-collapse_.collapse
+        +menu
+          +menu-root('#', 'Home', 1)
+            +menu-item('index.html') Home Version 1
+            +menu-item('index-2.html') Home Version 2 (slideshow)
+            +menu-item('index-1.html') Home Version 3 (video)
+          +menu-item('about.html') About Us
+          +menu-item('gallery.html') Gallery
+          +menu-root('#', 'Pages')
+            +menu-parent('flights.html', 'Flights')
+              +menu-item('search-flights.html') Search Flights
+              +menu-item('booking-flights.html') Booking Flights
+              +menu-item('booking-flights-page.html') Flights Checkout
+            +menu-parent('hotels.html', 'Hotels')
+              +menu-item('search-hotel.html') Search Hotels
+              +menu-item('booking-hotel.html') Booking Hotel
+              +menu-item('booking-hotel-page.html') Hotel Reservation
+            +menu-parent('cars.html', 'Rent a Car')
+              +menu-item('search-cars.html') Search Cars
+              +menu-item('booking-cars.html') Booking Car
+              +menu-item('booking-cars-page.html') Car Reservation
+            +menu-parent('cruises.html', 'Cruises')
+              +menu-item('search-cruise.html') Search Cruise
+              +menu-item('booking-cruise.html') Booking Cruise
+              +menu-item('booking-cruise-page.html') Cruise Checkout
+          +menu-root('#', 'Blog')
+            +menu-item('blog.html') Right Blog
+            +menu-item('left-blog.html') Left Blog
+            +menu-item('post.html') Right Post
+            +menu-item('left-post.html') Left Post
+            +menu-item('full-post.html') Full Post
+          +menu-item('contacts.html') Contacts

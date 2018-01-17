@@ -1,0 +1,27 @@
+{
+  "name": "toursite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oziabr/toursite.git"
+  },
+  "author": "Yury Tvardovsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Oziabr/toursite/issues"
+  },
+  "homepage": "https://github.com/Oziabr/toursite#readme",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
+    "pug": "^2.0.0-rc.4"
+  }
+}

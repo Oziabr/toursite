@@ -1,0 +1,6 @@
+mixin menu-root(link, text, active)
+  li.sub-menu.sub-menu-1(active=active)
+    a(href=link)&attributes(attributes)= text
+      em
+    ul
+      block
