@@ -2,8 +2,9 @@
   "name": "toursite",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.coffee",
   "scripts": {
+    "start": "coffee server.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,9 +20,17 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "bootstrap": "^3.3.7",
+    "caroufredsel": "^6.2.1",
+    "express": "^4.16.2",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
-    "jquery-ui": "^1.12.1",
-    "pug": "^2.0.0-rc.4"
+    "jquery-migrate": "^3.0.1",
+    "jquery-touchswipe": "^1.6.18",
+    "jquery-ui-dist": "^1.12.1",
+    "jquery.appear": "^1.0.1",
+    "jquery.easing": "^1.4.1",
+    "pug": "^2.0.0-rc.4",
+    "select2": "^4.0.6-rc.1",
+    "superfish": "^1.7.9"
   }
 }
