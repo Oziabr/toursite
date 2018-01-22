@@ -7,9 +7,9 @@ run = (cmd) ->
     console.log "stderr: #{stderr}" if stderr
 
 task 'assemble', 'assemble assets from node packages', (options) ->
-  run '(mkdir demo/css || :) 2>/dev/null'
-  run '(mkdir demo/js || :) 2>/dev/null'
-  run '(mkdir demo/images || :) 2>/dev/null'
+  run 'mkdir -p demo/css/images'
+  run 'mkdir -p demo/js'
+  run 'mkdir -p demo/images'
 
   run 'cp node_modules/bootstrap/dist/css/bootstrap.css demo/css'
   run 'cp node_modules/font-awesome/css/font-awesome.css demo/css'
@@ -32,6 +32,7 @@ task 'assemble', 'assemble assets from node packages', (options) ->
 
   run 'cp src/assets/*.png demo/images'
   run 'cp src/assets/*.jpg demo/images'
+  run 'cp src/assets/css/* demo/css/images'
 
 task 'compile', 'compile pug templates into html', (options) ->
   run '''cd src/mixins; find . -type f | grep -v index | awk '{print "include " $1}' > index.pug'''
@@ -41,4 +42,4 @@ task 'up', 'run preview', (options) ->
   invoke 'assemble'
   invoke 'compile'
   run 'npm start'
-  console.log 'check preview at https://toursite-oziabr.c9users.io'
+  console.log "\x1b[33mcheck preview at \x1b[1m\x1b[33mhttps://toursite-oziabr.c9users.io\x1b[0m\n"
